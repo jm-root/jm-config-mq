@@ -14,7 +14,10 @@ var config = {
     production: {
         port: 20000,
         modules: {
-            '': {
+            'config': {
+                module: 'jm-config'
+            },
+            'jm-config-mq': {
                 module: process.cwd() + '/lib'
             }
         }
