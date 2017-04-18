@@ -1,11 +1,11 @@
 {
   "name": "jm-config-mq",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mq plugin for jm-config",
   "main": "./lib/index",
   "scripts": {
-    "start": "jm-server",
-    "cluster": "jm-server --cluster",
+    "start": "node node_modules/jm-server/bin/jm-server",
+    "cluster": "node node_modules/jm-server/bin/jm-server --cluster",
     "test": "node test"
   },
   "repository": {
@@ -24,7 +24,7 @@
     "url": "http://git.jamma.cn/play/jm-config-mq/issues"
   },
   "homepage": "http://git.jamma.cn/play/jm-config-mq",
-  "dependencies": {
+  "devDependencies": {
     "jm-config": "^1.0.0"
   }
 }
